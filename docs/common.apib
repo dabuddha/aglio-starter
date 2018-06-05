@@ -1,0 +1,9 @@
+## 请求公共参数
+除登录、举报等接口外，其他依赖用户身份的接口都需要传入以下参数
+
+- `Authorization`: 用户身份验证数据，即：登录成功后后台返回的user.token
+- `timestamp`: 时间截
+- `nonce`: 随机字符串
+- `sign`: 签名信息。具体签名算法参见[签名算法](https://wiki.videoup.tv/pages/viewpage.action?pageId=9994255)
+- `device_id`: 客户端产生的识别唯一设备的uuid, 该参数后端不校验是否存在
+- `device_type`: 设备类型，必传参数

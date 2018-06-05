@@ -1,0 +1,22 @@
+{
+  "name": "whiski-api",
+  "version": "1.0.0",
+  "description": "whiski api list",
+  "main": "index.js",
+  "scripts": {
+    "build": "aglio --theme-variables flatly -i index.apib -o dist/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aglio": "^2.3.0",
+    "gulp": "^3.9.1",
+    "npm": "^6.1.0"
+  },
+  "devDependencies": {
+    "gulp-connect": "^5.5.0",
+    "gulp-run": "^1.7.1",
+    "gulp-shell": "^0.6.5"
+  }
+}
